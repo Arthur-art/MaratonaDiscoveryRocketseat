@@ -13,10 +13,28 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+}
+
 .container {
   width: min(90vw, 800px);
 
   margin: auto;
+}
+
+a:hover{
+  color: #3dd705;
+}
+
+.button .new{
+  display: inline-block;
+  margin-bottom: .8rem;
 }
 
 h2 {
@@ -25,6 +43,11 @@ h2 {
   color:var(--dark-blue);
 
   font-weight: normal;
+}
+
+a{
+  color: #49aa26;
+  text-decoration: none;
 }
 
 header {
@@ -40,6 +63,7 @@ header h1 {
 
 #balance {
   margin-top: -8rem;
+
 }
 
 #balance h2 {
@@ -58,6 +82,9 @@ header h1 {
 .card h3{
     font-weight: normal;
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card p{
@@ -99,9 +126,21 @@ table td{
 }
 
 
-table thead tr:first-child,
+table thead tr th:first-child,
 table tbody tr td:first-child {
     border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table thead tr th:last-child,
+table tbody tr td:last-child {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+table thead th{
+  background: white;
+  font-weight: normal;
+  padding: 1rem 2rem;
+  text-align: left;
 }
 
 td.description{
