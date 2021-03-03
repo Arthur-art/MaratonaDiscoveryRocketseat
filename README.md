@@ -1,3 +1,3 @@
 # ApplicationDevFinance
 
-Link to application - https://maratona-discovery-rocketseat.vercel.app/
+Link to application - https://dev-finance-xi.vercel.app/
